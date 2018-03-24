@@ -1,0 +1,86 @@
+
+<head>
+    <title>Shannon Kao</title>
+    <script src="lib/jquery-latest.min.js"></script>
+    <script src="index.js"></script>
+    
+    <style>
+        body {
+            min-width: 500px;
+        }
+        
+        .header {
+            text-align: center;
+            padding-top: 15px;
+        }
+        .header-link {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .header-link a {
+            color: #150D0A;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Canter', Helvetica, Arial, sans-serif;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .header-link a:hover {
+            color: #ACCBBC;
+        }
+        .header-link img {
+            width: 30px;
+            height: 30px;
+            padding: 8px
+        }
+        
+        #header-contact {
+            position: relative;
+        }
+        #header-icons {
+            position: absolute;
+            left: 8px;
+            top: 0px;
+        }
+        
+        #waterfall {
+            display: flex;
+            margin: 0px auto;
+            justify-content: center;
+            padding: 30px 50px;
+        }
+        
+        .img-cont {
+            max-width: 450px;
+            padding: 2px;
+        }
+        .img-cont img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-link"><a href="/">Illustration</a></div>
+        <div class="header-link"><a href="https://mellific.tumblr.com/tagged/comics">Comics</a></div>
+        <div class="header-link" id="header-contact">
+            <div id="header-contact-link">
+                <a href="/">Contact</a>
+            </div>
+            <div id="header-icons">
+                <a href="https://mellific.tumblr.com">
+                    <img src="img/tumblr.svg">
+                </a>
+                <a href="https://twitter.com/shannonkao">
+                    <img src="img/twitter.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="waterfall">
+    </div>
+</body>
