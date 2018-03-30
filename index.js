@@ -1,7 +1,8 @@
 var _image_path = "img/";
 var _image_list = ["vast.png", "roadtrip-bison.png", 
                    "fatt-mystery.png", "fatt-sun.png",
-                   "forged.png", "doorway.png",
+                   "tea-1.png", "doorway.png",
+                   "tea-2.png", "forged.png",
                    "city-1.png", "city-2.png"];
 
 var _col_count = 2;
