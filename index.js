@@ -3,7 +3,8 @@ var _image_list = ["bottle.gif", "deer.png",
                    "vast.png", "roadtrip-bison.png", 
                    "fatt-mystery.png", "fatt-sun.png",
                    "doorway.png", "roadtrip-baishe.png", 
-                   "", "forged.png",
+                   "bulb-1.png", "forged.png",
+                   "tea.png", "bulb-2.png",
                    "motel.png", "lake.png",
                    "city-1.png", "city-2.png"];
 
