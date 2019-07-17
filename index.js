@@ -7,8 +7,8 @@ var _image_list = ["bus-1.png", "roadtrip-bison.png", "deer.png",
 var _col_count;
 
 $(document).ready(function() {
-   layout_images();
-   window.addEventListener('resize', layout_images);
+   layout_images(_image_list);
+   window.addEventListener('resize', layout_images, _image_list);
     
     $('#header-contact').on({
         'mouseenter': function() {
@@ -25,7 +25,7 @@ var col_count = function() {
     return window.innerWidth < 900 ? 2 : 3;
 }
 
-var layout_images = function() {
+var layout_images = function(list) {
     var new_count = col_count();
 
     if (new_count != _col_count) {
@@ -38,11 +38,11 @@ var layout_images = function() {
             var col = waterfall.append($('<div>', {class: "col"}));
         }
 
-        for (var i = 0, c = 0; i < _image_list.length; i++, c++) {
+        for (var i = 0, c = 0; i < list.length; i++, c++) {
             c = c % _col_count;
-            if (_image_list[i] != "") {
+            if (list[i] != "") {
                 var img_cont = $('<div>', {class: "img-cont"});
-                img_cont.append($('<img>', {src: _image_path + _image_list[i]}));
+                img_cont.append($('<img>', {src: _image_path + list[i]}));
                 $(".col").eq(c).append(img_cont);
             }
         }
