@@ -27,11 +27,11 @@ class Contact extends React.Component<{}, ContactState> {
       <div className="header-contact" onMouseOver={this.onMouseOver} onMouseLeave={this.onMouseLeave}>
           {this.state.show
           ? <div>
-                <a className="header-icon" href="https://mellific.tumblr.com" target="_blank">
-                    <img src={tumblr} />
+                <a className="header-icon" href="https://mellific.tumblr.com" target="_blank" rel="noopener noreferrer">
+                    <img src={tumblr} alt="Tumblr logo" />
                 </a>
-                <a className="header-icon" href="https://twitter.com/shannonkao" target="_blank">
-                    <img src={twitter} />
+                <a className="header-icon" href="https://twitter.com/shannonkao" target="_blank" rel="noopener noreferrer">
+                    <img src={twitter} alt="Twitter logo" />
                 </a>
             </div>
           : <a href="/">Contact</a>

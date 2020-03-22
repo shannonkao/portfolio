@@ -12,8 +12,7 @@ function Tile(props: TileProps) {
         {props.paths.map((el, i) => {
             if (!el) return;
             return <div className="wrapper" key={i}>
-                <img 
-                    src={require(`../img/${el}`)} />
+                <img src={require(`../img/${el}`)} alt="Portfolio image" />
             </div>
         })}
     </div>
