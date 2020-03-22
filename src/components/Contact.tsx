@@ -2,7 +2,6 @@ import React from 'react';
 import tumblr from '../img/icons/tumblr.svg';
 import twitter from '../img/icons/twitter.svg';
 import '../styles/Contact.css';
-import { timingSafeEqual } from 'crypto';
 
 interface ContactState {
   show?: boolean
