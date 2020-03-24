@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2rem;
+    max-width: 1200px;
+}
+
+.list-header {
+    margin: 1rem 0 3rem;
+    font-style: italic;
+}
+
+.list-items {
+    display: flex;
+    justify-content: center;
+}
+.list-items > .wrapper {
+    max-width: 500px;
+    margin-right: 0.5rem;
+}
