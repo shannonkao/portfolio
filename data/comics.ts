@@ -22,6 +22,18 @@ export const comics: ListItem[] = [
         paths: ["/comics/desire/0.png", "/comics/desire/1.png", "/comics/desire/2.png", "/comics/desire/3.png", "/comics/desire/4.png"]
     },
     {
+        id: "spring",
+        name: "spring",
+        year: "2021",
+        paths: ["/comics/spring.png"]
+    },
+    {
+        id: "piranesi",
+        name: "Scenes from Susanna Clarke's 'Piranesi'",
+        year: "2020",
+        paths: ["/comics/piranesi-1.png", "/comics/piranesi-2.png"]
+    },
+    {
         id: "caves",
         name: "Echoes",
         year: "2019",
