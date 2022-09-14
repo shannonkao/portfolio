@@ -1,0 +1,27 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 0.25rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.25rem;
+}
+
+.image {
+  flex: 1;
+  position: relative;
+}
+
+.image + .image {
+  margin-left: 0.5rem;
+}
