@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import Image from 'next/future/image'
 
-import styles from '../../styles/home.module.css'
 import { comics } from '../../data/comics'
 
 export async function getStaticProps() {
@@ -29,16 +28,21 @@ const Comic: NextPage = () => {
   const info = comics.find(el => el.id == id);
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        {info?.paths.map(path => <div key={path} className={styles["comic-page"]}>
+    <div>
+      <main style={ { padding: "2rem" } }>
+        {info?.paths.map(path => <div key={path} style={{
+          display: "flex",
+          justifyContent: "center",
+          maxHeight: "38rem",
+          marginBottom: "1rem"
+        }}>
             <Image
                 src={path}
                 width="0"
                 height="0"
                 sizes="100vw"
                 alt=""
-                style={{ height: '100%', width: 'auto', objectFit: 'contain' }}
+                style={{ height: 'auto', width: 'auto', objectFit: 'contain', maxWidth: '90%' }}
             />
         </div>)}
       </main>

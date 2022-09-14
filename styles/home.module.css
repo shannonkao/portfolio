@@ -41,21 +41,3 @@
 .contact div > a:first-child {
   margin-right: 1rem;
 }
-
-.comic-page {
-  display: flex;
-  justify-content: center;
-  height: 38rem;
-  margin-bottom: 1rem;
-}
-
-.comic-page > img {
-  max-width: 90%;
-}
-
-@media only screen and (max-width: 768px) {
-  .comic-page {
-    height: unset;
-    width: 100%;
-  }
-}
