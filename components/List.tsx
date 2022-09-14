@@ -10,21 +10,28 @@ interface ListProps {
 export default function List({ items }: ListProps) {
     return (
         <div className={styles.list}>
-            {items.map(el => <div key={el.name} className={styles["list-item"]}>
-                <div className={styles["list-preview"]}>
-                    {el.paths.slice(0, 2).map(path => <div key={path}>
-                        <Image
-                            src={path}
-                            width="0"
-                            height="0"
-                            sizes="100vw"
-                            alt=""
-                            style={{ width: '30rem', height: '100%' }}
-                        />
-                    </div>)}
+            {items.map(el => {
+                const linkOut = el.paths.length > 2;
+                const link = `/comics/${el.id}`;
+                return <div key={el.name} className={styles["list-item"]}>
+                    <div className={styles["list-preview"]}>
+                        {el.paths.slice(0, 2).map((path, i) => <div key={path}>
+                            <a href={linkOut ? link : ""}>
+                                <Image
+                                    src={path}
+                                    width="0"
+                                    height="0"
+                                    sizes="100vw"
+                                    alt=""
+                                    style={{ width: '30rem', height: '100%' }}
+                                />
+                            </a>
+                            {linkOut && i == 1 && <a className={styles["link-out"]} href={link} />}
+                        </div>)}
+                    </div>
+                    <span>{`${el.name} (${el.year})`}</span>
                 </div>
-                <span>{`${el.name} (${el.year})`}</span>
-            </div>)}
+            })}
         </div>
     )
 }

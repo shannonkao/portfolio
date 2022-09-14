@@ -10,6 +10,12 @@ export type ListItem = {
 
 export const comics: ListItem[] = [
     {
+        id: "meander",
+        name: "Meander",
+        year: "2020",
+        paths: ["/comics/meander/0.png", "/comics/meander/1.png", "/comics/meander/2.png", "/comics/meander/3.png", "/comics/meander/4.png", "/comics/meander/5.png", "/comics/meander/6.png", "/comics/meander/7.png", "/comics/meander/8.png", "/comics/meander/9.png", "/comics/meander/10.png", "/comics/meander/12.png"]
+    },
+    {
         id: "desire",
         name: "Desire",
         year: "2022",
@@ -56,5 +62,11 @@ export const comics: ListItem[] = [
         name: "Smoke",
         year: "2018",
         paths: ["/comics/smoke.png"]
+    },
+    {
+        id: "still",
+        name: "Still",
+        year: "2018",
+        paths: ["/comics/still/0.png", "/comics/still/1.png", "/comics/still/2.png", "/comics/still/3.png", "/comics/still/4.png", "/comics/still/5.png", "/comics/still/6.png"]
     },
 ]

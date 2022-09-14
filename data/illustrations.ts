@@ -34,11 +34,18 @@ const items: GridItem[] = [
     { paths: ["/illustration/city-2.png"], x: 2, z: 35 },
 ]
 
-const sortedItems: GridItem[][] = [];
+const twoColumn: GridItem[][] = [[], []];
+const zSort = items.sort((a, b) => { return a.z > b.z ? 1 : -1 });
+for (let i = 0; i < items.length; i++) {
+    twoColumn[i % 2].push(zSort[i]);
+}
+
+const threeColumn: GridItem[][] = [];
 for (let i = 0; i < 3; i++) {
-    sortedItems.push(
+    threeColumn.push(
         items.filter(el => el.x == i)
             .sort((a, b) => { return a.z > b.z ? 1 : -1 }));
 }
 
-export const illustrations = sortedItems;
+export const illustrations = threeColumn;
+export const mobileIllustrations = twoColumn;

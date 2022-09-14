@@ -13,7 +13,11 @@ export async function getStaticProps() {
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { id: 'desire' } }, { params: { id: 'meander' } }],
+    paths: [
+      { params: { id: 'desire' } },
+      { params: { id: 'meander' } },
+      { params: { id: 'still' } },
+    ],
     fallback: false
   }
 }
@@ -27,14 +31,14 @@ const Comic: NextPage = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        {info?.paths.map(path => <div key={path}>
+        {info?.paths.map(path => <div key={path} className={styles["comic-page"]}>
             <Image
                 src={path}
                 width="0"
                 height="0"
                 sizes="100vw"
                 alt=""
-                style={{ width: '30rem', height: '100%' }}
+                style={{ height: '100%', width: 'auto', objectFit: 'contain' }}
             />
         </div>)}
       </main>
