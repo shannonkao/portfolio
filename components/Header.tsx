@@ -1,15 +1,16 @@
-import styles from '../styles/home.module.css'
+import Link from 'next/link';
+import styles from '../styles/home.module.css';
 import Contact from './Contact';
 
 export default function Header() {
     return (
         <>
             <div className={styles.title}>
-            <a href="/">Shannon Kao</a>
+            <Link href="/">Shannon Kao</Link>
             </div>
             <div className={styles.header}>
                 <div>
-                <a href="/comics">Comics</a>
+                <Link href="/comics">Comics</Link>
                 </div>
                 <div>
                 <a href="https://www.inprnt.com/gallery/shannonkao/"

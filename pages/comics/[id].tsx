@@ -27,7 +27,7 @@ const Comic: NextPage = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        {info?.paths.map(path => <div>
+        {info?.paths.map(path => <div key={path}>
             <Image
                 src={path}
                 width="0"

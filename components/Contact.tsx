@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import Link from 'next/link';
 import Image from 'next/future/image'
 import styles from '../styles/home.module.css'
 
@@ -17,7 +18,7 @@ export default function Contact() {
                     <Image src="/logo/twitter.svg" alt="Twitter logo" height={24} width={24} />
                 </a>
             </div>
-          : <a href="/">Contact</a>}
+          : <Link href="/">Contact</Link>}
         </div>
     )
 }
