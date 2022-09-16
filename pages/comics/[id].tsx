@@ -1,20 +1,25 @@
-import type { GetServerSidePropsContext, NextPage } from 'next'
+import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import Image from 'next/future/image'
 
 import { comics } from '../../data/comics'
 
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const id = context.params?.id;
-
-  const info = comics.find(el => el.id == id);
-  if (!info) {
-    return { notFound: true };
-  }
+export async function getStaticProps() {
   return {
-    props: { }
-  };
-};
+    props: {},
+  }
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { id: 'desire' } },
+      { params: { id: 'meander' } },
+      { params: { id: 'still' } },
+    ],
+    fallback: false
+  }
+}
 
 const Comic: NextPage = () => {
   const router = useRouter();
