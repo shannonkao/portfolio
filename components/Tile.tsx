@@ -3,9 +3,10 @@ import styles from '../styles/grid.module.css'
 
 interface TileProps {
     paths: string[];
+    priority?: boolean
 }
 
-export default function Tile({ paths }: TileProps) {
+export default function Tile({ paths, priority }: TileProps) {
     return (
         <div className={styles.tile}>
             {paths.map(path => {
@@ -17,6 +18,7 @@ export default function Tile({ paths }: TileProps) {
                         sizes="100vw"
                         alt=""
                         style={{ width: '100%', height: 'auto' }}
+                        priority={priority}
                     />
                 </div>
             })}

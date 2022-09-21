@@ -24,6 +24,7 @@ export default function List({ items }: ListProps) {
                                     sizes="100vw"
                                     alt=""
                                     style={{ width: '30rem', height: '100%' }}
+                                    priority={el.priority}
                                 />
                             </a>
                             {linkOut && i == 1 && <a className={styles["link-out"]} href={link} />}

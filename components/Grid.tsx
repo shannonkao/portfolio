@@ -13,7 +13,7 @@ export default function Grid({ columns }: GridProps) {
             {columns.map((col, i) => {
                 return <div key={i} className={styles.column}>
                     {col.map((tile, j) => {
-                        return <Tile key={j} paths={tile.paths} />
+                        return <Tile key={j} paths={tile.paths} priority={tile.priority} />
                     })
                     }
                 </div>

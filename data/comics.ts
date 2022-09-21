@@ -6,6 +6,7 @@ export type ListItem = {
     description?: string;
     paths: string[];
     href?: string;
+    priority?: boolean;
 }
 
 export const comics: ListItem[] = [
@@ -13,7 +14,8 @@ export const comics: ListItem[] = [
         id: "meander",
         name: "Meander",
         year: "2020",
-        paths: ["/comics/meander/0.png", "/comics/meander/1.png", "/comics/meander/2.png", "/comics/meander/3.png", "/comics/meander/4.png", "/comics/meander/5.png", "/comics/meander/6.png", "/comics/meander/7.png", "/comics/meander/8.png", "/comics/meander/9.png", "/comics/meander/10.png", "/comics/meander/12.png"]
+        paths: ["/comics/meander/0.png", "/comics/meander/1.png", "/comics/meander/2.png", "/comics/meander/3.png", "/comics/meander/4.png", "/comics/meander/5.png", "/comics/meander/6.png", "/comics/meander/7.png", "/comics/meander/8.png", "/comics/meander/9.png", "/comics/meander/10.png", "/comics/meander/12.png"],
+        priority: true,
     },
     {
         id: "desire",
