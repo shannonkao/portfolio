@@ -1,14 +1,12 @@
-.container {
+.main {
   display: flex;
-  justify-content: center;
-  padding: 2rem;
 }
 
 .title {
   display: flex;
   justify-content: center;
   margin-bottom: 0.5rem;
-  font-family: 'Dosis', 'Century Gothic', Helvetica, sans-serif;
+  font-family: 'Archivo', Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 3rem;
   text-transform: uppercase;
@@ -38,6 +36,50 @@
   color: #ffc788;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  z-index: 100;
+}
+
+.nav > a {
+  padding-bottom: 0.2rem;
+}
+
+
+.toc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 23rem;
+  z-index: 100;
+}
+
+.toc li {
+  list-style: none;
+  text-indent: -1.5em;
+  margin-left: 1.5em;
+  line-height: 1.25rem;
+}
+
+.toc li:before {
+  content: '— ';
+  width: 1.5em;
+}
+
+.name {
+  text-align: right;
+}
+
 .contact div > a:first-child {
   margin-right: 1rem;
+}
+
+.gc {
+  width: calc(100% - 23rem);
+  overflow: scroll;
 }

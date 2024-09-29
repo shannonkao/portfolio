@@ -1,2 +1,2 @@
 ## Portfolio
-Illustration and comics portfolio
+Shannon Kao portfolio

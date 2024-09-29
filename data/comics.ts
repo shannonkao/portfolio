@@ -3,6 +3,7 @@ export type ListItem = {
     id: string;
     name: string;
     year: string;
+    medium?: string;
     description?: string;
     paths: string[];
     href?: string;

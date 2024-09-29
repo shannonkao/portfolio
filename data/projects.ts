@@ -1,0 +1,58 @@
+import { ListItem } from './comics';
+
+export const projects: ListItem[] = [
+    {
+        id: "log",
+        name: "A Longitudinal Study of Deadwood Function in Lowland Forest Ecosystems",
+        description: "A cylindrical book constructed of textured paper with chalk and oil pastel highlights. Each is constructed by hand and features a set of small papercraft oyster mushrooms. The interior of the book is a scroll of paper measuring 2.5\" x 30\", and depicts a timelapse of the log.",
+        year: "2024",
+        medium: "paper, chalk pastel, ink, digital print",
+        paths: ["log.png", "log-1.png"],
+        priority: true,
+    },
+    {
+        id: "ebb",
+        name: "ebb and rot",
+        description: "A pair of accordion zines created after a series of trips to the Cascades and the Olympic coast. Risograph printed and featuring macro illustrations of the local ecosystem in flux.",
+        year: "2024",
+        medium: "4-color risograph",
+        paths: ["ebb-rot.png", "ebb-1.png", "ebb-2.png", "rot-1.png", "rot-2.png"],
+        priority: true,
+    },
+    {
+        id: "sky",
+        name: "sky/sea",
+        description: "A book constructed from paper that has been block-printed blue on one side with alternating spreads of blue and white. Each image is a stencil cutout using only the color of the page behind it, with the illustrations carefully designed to be non-overlapping.",
+        year: "2023",
+        medium: "block-printed paper, twine",
+        paths: ["sky-1.jpg", "sky-2.jpg", "sky-3.jpg"],
+        priority: true,
+    },
+    {
+        id: "mixtape",
+        name: "Mixtape Zine",
+        description: "A collaborative project between fifteen artists. Each artist designed a 'mixtape' (small playlist) and a 4\" x 2.75\" accordion zine with each song represented in one page. The final book is a collection of all fifteen zines packaged in two clear cassette boxes. Run of 16.",
+        year: "2023",
+        medium: "plastic cassette case, digital print",
+        paths: ["mixtape-1.png", "mixtape-2.png", "mixtape-3.png", "mixtape-4.jpg"],
+        priority: true,
+    },
+    {
+        id: "dirt",
+        name: "dirt.net",
+        description: "",
+        year: "2023",
+        medium: "website",
+        paths: ["/"],
+        priority: true,
+    },
+    {
+        id: "desire",
+        name: "DESIRE and FASCINATE",
+        description: "",
+        year: "2022-2023",
+        medium: "digital print",
+        paths: ["/"],
+        priority: true,
+    },
+]

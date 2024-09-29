@@ -4,11 +4,12 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </Head>
       <body>
-        <noscript>Shannon is a Seattle-based comic artist and illustrator who is interested in uncanny places and odd stories.</noscript>
+        <noscript>Shannon is a Seattle-based artist interested in exploring the intersection of natural and built environments through multidisciplinary practice, with a focus on book-making, print, and digital interfaces. They co-operate the small risograph press snack break studio.</noscript>
         <Main />
         <NextScript />
       </body>
