@@ -22,11 +22,10 @@ const Home: NextPage = () => {
           <div className={styles.name}>shannon kao</div>
           <div>Shannon is a Seattle-based artist interested in exploring the intersection of natural and built environments through multidisciplinary practice, with a focus on book-making, print, and digital interfaces. They co-operate the small risograph press <a href="https://snackbreakstudio.net/" target="_blank">snack break studio.</a></div>
           <ul>
-            <li>A Longitudinal Study of Deadwood Function in Lowland Forest Ecosystems</li>
-            <li><i>ebb</i> and <i>rot</i></li>
-            <li>sky/sea</li>
-            <li>Mixtape Zine</li>
-            <li>DESIRE and FASCINATE</li>
+            {projects.map(p => {
+                return <li><a href={`#${p.id}0`}>{p.name}</a></li>
+              })
+            }
           </ul>
         </div>
       </main>

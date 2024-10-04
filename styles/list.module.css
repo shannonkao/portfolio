@@ -43,12 +43,12 @@
   height: 100%;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.9);
-  font-size: 5rem;
+  font-size: 1.4rem;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 
 .link-out::before {
-  content: '›';
+  content: '→';
 }
 
 .link-out:hover {

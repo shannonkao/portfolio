@@ -6,10 +6,10 @@ export default function Header() {
     return (
         <>
             <div className={styles.nav}>
-                <Link href="/">🏠</Link>
-                <Link href="/projects">📚</Link>
-                <Link href="/illustration">🖌️</Link>
-                <Link href="/about">💡</Link>
+                <Link href="/" title="Home">🏠</Link>
+                <Link href="/illustration" title="Illustrations">🖌️</Link>
+                <Link href="/comics" title="Comics">📚</Link>
+                <Link href="/contact" title="Contact">☎️</Link>
             </div>
         </>
     )
