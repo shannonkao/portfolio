@@ -14,8 +14,12 @@ export async function getStaticPaths() {
   return {
     paths: [
       { params: { id: 'desire' } },
+      { params: { id: 'fascinate' } },
+      { params: { id: 'n2' } },
       { params: { id: 'meander' } },
       { params: { id: 'still' } },
+      { params: { id: 'ebb' } },
+      { params: { id: 'rot' } },
     ],
     fallback: false
   }

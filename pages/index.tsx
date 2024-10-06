@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <div>Shannon is a Seattle-based artist interested in exploring the intersection of natural and built environments through multidisciplinary practice, with a focus on book-making, print, and digital interfaces. They co-operate the small risograph press <a href="https://snackbreakstudio.net/" target="_blank">snack break studio.</a></div>
           <ul>
             {projects.map(p => {
-                return <li><a href={`#${p.id}0`}>{p.name}</a></li>
+                return <li key={p.id}><a href={`#${p.id}0`}>{p.name}</a></li>
               })
             }
           </ul>
