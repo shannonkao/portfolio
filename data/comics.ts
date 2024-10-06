@@ -3,25 +3,55 @@ export type ListItem = {
     id: string;
     name: string;
     year: string;
+    medium?: string;
     description?: string;
     paths: string[];
     href?: string;
     priority?: boolean;
+    spread?: boolean;
+    cover?: boolean;
 }
 
 export const comics: ListItem[] = [
+    {
+        id: "n2",
+        name: "N2",
+        year: "2023",
+        paths: ["/comics/n2/00.png", "/comics/n2/01.png", "/comics/n2/02-03.png", "/comics/n2/04-05.png", "/comics/n2/06-07.png", "/comics/n2/08-09.png", "/comics/n2/10-11.png", "/comics/n2/12-13.png", "/comics/n2/14-15.png", "/comics/n2/16.png"],
+        priority: true,
+    },
+    {
+        id: "rot",
+        name: "rot",
+        year: "2024",
+        paths: ["/comics/rot/0.png", "/comics/rot/1.png", "/comics/rot/2.png", "/comics/rot/3.png", "/comics/rot/4.png", "/comics/rot/5.png", "/comics/rot/6.png", "/comics/rot/7.png"],
+        priority: true,
+    },
+    {
+        id: "ebb",
+        name: "ebb",
+        year: "2024",
+        paths: ["/comics/ebb/0.png", "/comics/ebb/1.png", "/comics/ebb/2.png", "/comics/ebb/3.png", "/comics/ebb/4.png", "/comics/ebb/5.png", "/comics/ebb/6.png", "/comics/ebb/7.png"],
+    },
     {
         id: "meander",
         name: "Meander",
         year: "2020",
         paths: ["/comics/meander/0.png", "/comics/meander/1.png", "/comics/meander/2.png", "/comics/meander/3.png", "/comics/meander/4.png", "/comics/meander/5.png", "/comics/meander/6.png", "/comics/meander/7.png", "/comics/meander/8.png", "/comics/meander/9.png", "/comics/meander/10.png", "/comics/meander/12.png"],
-        priority: true,
+    },
+    {
+        id: "fascinate",
+        name: "Fascinate",
+        year: "2023",
+        paths: ["/comics/fascinate/0.png", "/comics/fascinate/1.png", "/comics/fascinate/2.png", "/comics/fascinate/3.png", "/comics/fascinate/4.png", "/comics/fascinate/5.png", "/comics/fascinate/6.png"],
+        spread: true
     },
     {
         id: "desire",
         name: "Desire",
         year: "2022",
-        paths: ["/comics/desire/0.png", "/comics/desire/1.png", "/comics/desire/2.png", "/comics/desire/3.png", "/comics/desire/4.png"]
+        paths: ["/comics/desire/0.png", "/comics/desire/1.png", "/comics/desire/2.png", "/comics/desire/3.png", "/comics/desire/4.png", "/comics/desire/5.png", "/comics/desire/6.png"],
+        spread: true
     },
     {
         id: "spring",
