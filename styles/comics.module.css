@@ -1,0 +1,15 @@
+.comic {
+  margin: 2rem;
+  display: grid;
+}
+
+.spread {
+  grid-template-columns: auto auto;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  height: 38rem;
+  margin-bottom: 1rem;
+}

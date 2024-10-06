@@ -8,6 +8,8 @@ export type ListItem = {
     paths: string[];
     href?: string;
     priority?: boolean;
+    spread?: boolean;
+    cover?: boolean;
 }
 
 export const comics: ListItem[] = [
@@ -41,13 +43,15 @@ export const comics: ListItem[] = [
         id: "fascinate",
         name: "Fascinate",
         year: "2023",
-        paths: ["/comics/fascinate/0.png", "/comics/fascinate/1.png", "/comics/fascinate/2.png", "/comics/fascinate/3.png", "/comics/fascinate/4.png", "/comics/fascinate/5.png", "/comics/fascinate/6.png"]
+        paths: ["/comics/fascinate/0.png", "/comics/fascinate/1.png", "/comics/fascinate/2.png", "/comics/fascinate/3.png", "/comics/fascinate/4.png", "/comics/fascinate/5.png", "/comics/fascinate/6.png"],
+        spread: true
     },
     {
         id: "desire",
         name: "Desire",
         year: "2022",
-        paths: ["/comics/desire/0.png", "/comics/desire/1.png", "/comics/desire/2.png", "/comics/desire/3.png", "/comics/desire/4.png", "/comics/desire/5.png", "/comics/desire/6.png"]
+        paths: ["/comics/desire/0.png", "/comics/desire/1.png", "/comics/desire/2.png", "/comics/desire/3.png", "/comics/desire/4.png", "/comics/desire/5.png", "/comics/desire/6.png"],
+        spread: true
     },
     {
         id: "spring",

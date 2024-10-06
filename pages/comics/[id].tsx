@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import Image from 'next/future/image'
 
 import { comics } from '../../data/comics'
+import Header from '../../components/Header'
+import styles from '../../styles/comics.module.css'
 
 export async function getStaticProps() {
   return {
@@ -30,23 +32,21 @@ const Comic: NextPage = () => {
   const { id } = router.query;
 
   const info = comics.find(el => el.id == id);
+  const spread = !!info?.spread;
+  const cover = !!info?.cover;
 
   return (
     <div>
-      <main style={ { padding: "2rem" } }>
-        {info?.paths.map(path => <div key={path} style={{
-          display: "flex",
-          justifyContent: "center",
-          maxHeight: "38rem",
-          marginBottom: "1rem"
-        }}>
+      <main className={`${styles.comic} ${spread ? styles.spread : ''}`}>
+        <Header />
+        {info?.paths.map(path => <div key={path} className={styles.page}>
             <Image
                 src={path}
                 width="0"
                 height="0"
                 sizes="100vw"
                 alt=""
-                style={{ height: 'auto', width: 'auto', objectFit: 'contain', maxWidth: '90%' }}
+                style={{ height: '100%', width: 'auto'}}
             />
         </div>)}
       </main>
