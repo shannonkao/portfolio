@@ -12,8 +12,8 @@ const Contact: NextPage = () => {
         <div className={styles.center}>
           <div className={styles.contact}>
             <span>me at shannonkao.com</span>
-            <span>Tumblr: <a href="https://mellific.tumblr.com/" target="_blank">@mellific</a></span>
-            <span>Twitter: <a href="https://twitter.com/mellifics" target="_blank">@mellifics</a></span>
+            <span>Tumblr: <a href="https://mellific.tumblr.com/" target="_blank" rel="noreferrer">@mellific</a></span>
+            <span>Twitter: <a href="https://twitter.com/mellifics" target="_blank" rel="noreferrer">@mellifics</a></span>
           </div>
         </div>
       </main>
