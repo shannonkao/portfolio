@@ -32,10 +32,6 @@
   margin-right: 1rem;
 }
 
-.header > div a:hover {
-  color: #ffc788;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -50,6 +46,12 @@
   padding-bottom: 0.2rem;
 }
 
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
 
 .toc {
   position: fixed;
@@ -71,6 +73,14 @@
   width: 1.5em;
 }
 
+.toc li a {
+  color: inherit;
+}
+
+.toc li a:hover {
+  color: blue;
+}
+
 .name {
   text-align: right;
 }
@@ -82,4 +92,14 @@
 .gc {
   width: calc(100% - 23rem);
   overflow: scroll;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact > span:first-child {
+  margin-bottom: 1rem;
 }

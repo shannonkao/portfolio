@@ -31,6 +31,9 @@ export default function List({ items }: ListProps) {
                         </div>)}
                     </div>
                     <span>{`${el.name} (${el.year})`}</span>
+                    <span>
+                        {linkOut && <a href={link}>Read →</a>}
+                    </span>
                 </div>
             })}
         </div>

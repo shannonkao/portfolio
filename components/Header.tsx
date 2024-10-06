@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from '../styles/home.module.css';
-import Contact from './Contact';
 
 export default function Header() {
     return (

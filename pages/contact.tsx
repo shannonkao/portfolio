@@ -1,22 +1,24 @@
 import type { NextPage } from 'next'
-import Grid from '../components/Grid'
 import styles from '../styles/home.module.css'
-import { illustrations, mobileIllustrations } from '../data/illustrations'
 import Header from '../components/Header'
 import useMediaQuery from '../hooks/useMediaQuery'
 
-const Illustration: NextPage = () => {
+const Contact: NextPage = () => {
   const isMobile = useMediaQuery(768);
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <Header />
         <div className={styles.center}>
-          <Grid columns={isMobile ? mobileIllustrations: illustrations} />
+          <div className={styles.contact}>
+            <span>me at shannonkao.com</span>
+            <span>Tumblr: <a href="https://mellific.tumblr.com/" target="_blank">@mellific</a></span>
+            <span>Twitter: <a href="https://twitter.com/mellifics" target="_blank">@mellifics</a></span>
+          </div>
         </div>
       </main>
     </div>
   )
 }
 
-export default Illustration
+export default Contact

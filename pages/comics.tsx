@@ -9,7 +9,9 @@ const Comics: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <Header />
-        <List items={comics} />
+        <div className={styles.center}>
+          <List items={comics} />
+        </div>
       </main>
     </div>
   )
