@@ -83,6 +83,7 @@
 
 .name {
   text-align: right;
+  padding: 1rem;
 }
 
 .contact div > a:first-child {

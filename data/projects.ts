@@ -48,7 +48,7 @@ export const projects: ListItem[] = [
     },
     {
         id: "desire",
-        name: "DESIRE and FASCINATE",
+        name: "Desire and Fascinate",
         description: "A pair of staple-bound books written in a pesudo-academic style about the phenomena of desire paths and fasciation in plants. Full text available online.",
         year: "2022-2023",
         medium: "digital print",

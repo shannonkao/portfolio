@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import TooltipLink from './TooltipLink';
 import styles from '../styles/home.module.css';
 
 export default function Header() {
     return (
         <>
             <div className={styles.nav}>
-                <Link href="/" title="Home">🏠</Link>
-                <Link href="/illustration" title="Illustrations">🖌️</Link>
-                <Link href="/comics" title="Comics">📚</Link>
-                <Link href="/contact" title="Contact">☎️</Link>
+                <TooltipLink href="/" text="🏠" title="Home" />
+                <TooltipLink href="/illustration" text="🖌️" title="Illustrations" />
+                <TooltipLink href="/comics" text="📚" title="Comics" />
+                <TooltipLink href="/contact" text="☎️" title="Contact" />
             </div>
         </>
     )

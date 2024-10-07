@@ -1,0 +1,17 @@
+.tooltip-link {
+  margin-top: 0.5rem;
+}
+
+.tooltip-link .tooltip {
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  visibility: hidden;
+  text-align: center;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.tooltip-link:hover .tooltip {
+  visibility: visible;
+}
