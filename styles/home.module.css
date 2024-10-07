@@ -92,7 +92,6 @@
 
 .gc {
   width: calc(100% - 23rem);
-  overflow: scroll;
 }
 
 .contact {
