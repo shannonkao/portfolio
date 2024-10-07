@@ -96,7 +96,9 @@
 }
 
 .gc {
-  width: calc(100% - 23rem);
+  width: 50rem;
+  margin: auto;
+  transform: translateX(-10rem);
 }
 
 .contact {
@@ -107,4 +109,14 @@
 
 .contact > span:first-child {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 1400px) and (orientation:landscape) {
+  .nav {
+    left: calc(50vw - 45rem);
+  }
+
+  .toc {
+    right: calc(50vw - 45rem);
+  }
 }
