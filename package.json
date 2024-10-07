@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "static": "next build && next export && echo shannonkao.com > ./out/CNAME",
+    "static": "next build && next export && echo shannonkao.com > ./out/CNAME && touch ./out/.nojekyll",
     "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
