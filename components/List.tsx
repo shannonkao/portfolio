@@ -16,17 +16,13 @@ export default function List({ items }: ListProps) {
                 return <div key={el.name} className={styles["list-item"]}>
                     <div className={styles["list-preview"]}>
                         {el.paths.slice(0, 2).map((path, i) => <div key={path}>
-                            <a href={linkOut ? link : ""}>
-                                <Image
-                                    src={path}
-                                    width="0"
-                                    height="0"
-                                    sizes="100vw"
-                                    alt=""
-                                    style={{ width: '30rem', height: '100%' }}
-                                    priority={el.priority}
-                                />
-                            </a>
+                            {linkOut ? <a href={linkOut ? link : ""}>
+                                    <Image src={path} width="0" height="0" sizes="100vw" alt=""
+                                        style={{ width: '30rem', height: '100%' }} priority={el.priority} />
+                                </a>
+                                : <Image src={path} width="0" height="0" sizes="100vw" alt=""
+                                    style={{ width: '30rem', height: '100%' }} priority={el.priority} />
+                            }
                             {linkOut && i == 1 && <a className={styles["link-out"]} href={link} />}
                         </div>)}
                     </div>
