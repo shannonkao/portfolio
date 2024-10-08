@@ -76,12 +76,6 @@
   }
 
   .link-out {
-    height: 4rem;
-    width: 100%;
-    bottom: -2px;
-  }
-
-  .link-out::before {
-    transform: rotateZ(90deg);
+    display: none;
   }
 }

@@ -111,7 +111,33 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1400px) and (orientation:landscape) {
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .nav, .toc {
+    position: relative;
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .toc {
+    width: 100%;
+  }
+  .toc > ul {
+    display: none;
+  }
+  .gc {
+    width: 100%;
+    transform: none;
+  }
+  .main {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1400px) and (orientation: landscape) {
   .nav {
     left: calc(50vw - 45rem);
   }
