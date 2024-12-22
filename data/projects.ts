@@ -2,6 +2,15 @@ import { ListItem } from './comics';
 
 export const projects: ListItem[] = [
     {
+        id: "moth",
+        name: "Urban Adaptations, Vol 1. Moths",
+        description: "A 16-page saddle-stitched popup book with seven illustrated spreads, each featuring a unique moth. The final page is a map of the location the book was sold at, and varies from edition to edition.",
+        year: "2024",
+        medium: "digital print, thread, natural paper",
+        paths: ["moth-1.png", "moth-2.png", "moth-3.png", "moth-4.png"],
+        priority: true,
+    },
+    {
         id: "log",
         name: "A Longitudinal Study of Deadwood Function in Lowland Forest Ecosystems",
         description: "A cylindrical book constructed of textured paper with chalk and oil pastel highlights. Each is constructed by hand and features a set of small papercraft oyster mushrooms. The interior of the book is a scroll of paper measuring 2.5\" x 30\", and depicts a timelapse of the log.",
