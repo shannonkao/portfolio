@@ -19,6 +19,7 @@ next.config.js
 # misc
 .DS_Store
 *.pem
+deploy.txt
 
 # debug
 npm-debug.log*
