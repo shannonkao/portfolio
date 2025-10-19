@@ -8,6 +8,7 @@ export default function Header() {
                 <TooltipLink href="/" text="🏠" title="Home" />
                 <TooltipLink href="/illustration" text="🖌️" title="Illustrations" />
                 <TooltipLink href="/comics" text="📚" title="Comics" />
+                <TooltipLink href="/cv" text="📝" title="CV" />
                 <TooltipLink href="/contact" text="☎️" title="Contact" />
             </div>
         </>
