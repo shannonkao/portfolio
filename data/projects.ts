@@ -2,9 +2,36 @@ import { ListItem } from './comics';
 
 export const projects: ListItem[] = [
     {
+        id: "seagull",
+        name: "to shore",
+        description: "A screen printed \"squash\" style accordion book with papercraft seagulls and back cover. Part of 'Ink, Press, Repeat' 2025 at the William Paterson University Galleries.",
+        year: "2025",
+        medium: "screen print, papercraft",
+        paths: ["seagull-1.png", "seagull-2.png", "seagull-3.png", "seagull-4.png"],
+        priority: true,
+    },
+    {
+        id: "rain",
+        name: "2 sq. in. of rain at 9:15 AM on 8/6/2025",
+        description: "A miniature 16-page saddle-stitched book measuring 2 inches by 2 inches. A brief video of a small patch of rain on concrete was recorded, and each drop within the 2 inch square was transcribed onto a page of translucent vellum.",
+        year: "2025",
+        medium: "vellum, digital print, saddle stitch",
+        paths: ["rain-1.jpg", "rain-2.jpg", "rain-3.jpg"],
+        priority: true,
+    },
+    {
+        id: "soil",
+        name: "soil survey.",
+        description: "A 1-page Turkish map fold zine with three pinback buttons enclosed. The book is an illustrated depiction of data related to a variety of soils found in the Cascade range.",
+        year: "2025",
+        medium: "digital print, pinback buttons",
+        paths: ["soil-1.jpg", "soil-2.jpg", "soil-3.jpg"],
+        priority: true,
+    },
+    {
         id: "moth",
         name: "Urban Adaptations, Vol 1. Moths",
-        description: "A 16-page saddle-stitched popup book with seven illustrated spreads, each featuring a unique moth. The final page is a map of the location the book was sold at, and varies from edition to edition.",
+        description: "A 16-page popup book with seven illustrated spreads, each featuring a unique moth. The final page is a map of the location the book was sold at, and varies from edition to edition.",
         year: "2024",
         medium: "digital print, thread, natural paper",
         paths: ["moth-1.png", "moth-2.png", "moth-3.png", "moth-4.png"],
