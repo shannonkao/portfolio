@@ -11,6 +11,24 @@ export const projects: ListItem[] = [
         priority: true,
     },
     {
+        id: "catnap",
+        name: "catnap",
+        description: "A 2\"x3\" accordion book with window cutouts. An experiment in using light for composition.",
+        year: "2025",
+        medium: "inkjet print",
+        paths: ["catnap-1.png", "catnap-2.png", "catnap-3.png"],
+        priority: true,
+    },
+    {
+        id: "ferry",
+        name: "SEATTLE-BAINBRIDGE",
+        description: "A 3\"x2.5\" accordion book with a cutout cover. Left side of the ferry, looking south.",
+        year: "2025",
+        medium: "pencil, inkjet print",
+        paths: ["ferry-1.png", "ferry-2.png", "ferry-3.png"],
+        priority: true,
+    },
+    {
         id: "rain",
         name: "2 sq. in. of rain at 9:15 AM on 8/6/2025",
         description: "A miniature 16-page saddle-stitched book measuring 2 inches by 2 inches. A brief video of a small patch of rain on concrete was recorded, and each drop within the 2 inch square was transcribed onto a page of translucent vellum.",
@@ -22,7 +40,7 @@ export const projects: ListItem[] = [
     {
         id: "soil",
         name: "soil survey.",
-        description: "A 1-page Turkish map fold zine with three pinback buttons enclosed. The book is an illustrated depiction of data related to a variety of soils found in the Cascade range.",
+        description: "A 4\"x4\" 1-page Turkish map fold zine with three pinback buttons enclosed. The book is an illustrated depiction of data related to a variety of soils found in the Cascade range.",
         year: "2025",
         medium: "digital print, pinback buttons",
         paths: ["soil-1.jpg", "soil-2.jpg", "soil-3.jpg"],
@@ -31,7 +49,7 @@ export const projects: ListItem[] = [
     {
         id: "moth",
         name: "Urban Adaptations, Vol 1. Moths",
-        description: "A 16-page popup book with seven illustrated spreads, each featuring a unique moth. The final page is a map of the location the book was sold at, and varies from edition to edition.",
+        description: "A 4.5\"x4.5\" 16-page popup book with seven illustrated spreads, each featuring a unique moth. The final page is a map of the location the book was sold at, and varies from edition to edition.",
         year: "2024",
         medium: "digital print, thread, natural paper",
         paths: ["moth-1.png", "moth-2.png", "moth-3.png", "moth-4.png"],

@@ -13,19 +13,19 @@ const Contact: NextPage = () => {
           <div className={styles.cv}>
             <span>Exhibitions</span>
             <div>
-                <span>Small Impressions / Museum of Printing</span>
+                <span><a href="https://newenglandbookartists.org/small-impressions/" target="_blank">Small Impressions</a> / Museum of Printing</span>
                 <span>OCT 2025, HAVERHILLE, MA</span>
             </div>
             <div>
-                <span>New Editions / Minnesota Center for Book Arts</span>
+                <span><a href="https://mnbookarts.org/new-editions" target="_blank">New Editions</a> / Minnesota Center for Book Arts</span>
                 <span>OCT 2025, MINNEAPOLIS, MN</span>
             </div>
             <div>
-                <span>Ink, Press, Repeat / William Paterson University Galleries</span>
+                <span><a href="https://www.wpunj.edu/articles/news/2025-08-21/william-paterson-university-galleries-presents-ink-press-repeat-national-juried-printmaking-and-book-arts-exhibition" target="_blank">Ink, Press, Repeat</a> / William Paterson University Galleries</span>
                 <span>SEP 2025 - DEC 2025, WAYNE, NJ</span>
             </div>
             <div>
-                <span>DogEar Festival / Bainbridge Island Museum of Art</span>
+                <span><a href="https://www.biartmuseum.org/events/dogear-festival-2025/" target="_blank">DogEar Festival</a> / Bainbridge Island Museum of Art</span>
                 <span>APR 2025, BAINBRIDGE, WA</span>
             </div>
             <div>
