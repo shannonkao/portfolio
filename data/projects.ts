@@ -2,6 +2,15 @@ import { ListItem } from './comics';
 
 export const projects: ListItem[] = [
     {
+        id: "frogs",
+        name: "frogs with desk jobs",
+        description: "An accordion-bound book with fourteen removable business card insets using twelve different paper stocks. Volume 2 of the 'Urban Adapatations' series.",
+        year: "2026",
+        medium: "letterpress, embossing, papercraft, digital print",
+        paths: ["frog-1.jpg", "frog-2.jpg", "frog-3.jpg", "frog-4.jpg"],
+        priority: true,
+    },
+    {
         id: "seagull",
         name: "to shore",
         description: "A screen printed \"squash\" style accordion book with papercraft seagulls and back cover. Part of 'Ink, Press, Repeat' 2025 at the William Paterson University Galleries.",
